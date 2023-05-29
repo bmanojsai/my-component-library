@@ -1,0 +1,32 @@
+npm ERR! code ERESOLVE
+npm ERR! ERESOLVE could not resolve
+npm ERR! 
+npm ERR! While resolving: styled-components-modifiers@1.2.5
+npm ERR! Found: styled-components@5.3.11
+npm ERR! node_modules/styled-components
+npm ERR!   peer styled-components@">= 2" from babel-plugin-styled-components@2.1.3
+npm ERR!   node_modules/babel-plugin-styled-components
+npm ERR!     babel-plugin-styled-components@">= 1.12.0" from styled-components@5.3.11
+npm ERR!   styled-components@"^5.3.11" from the root project
+npm ERR! 
+npm ERR! Could not resolve dependency:
+npm ERR! peer styled-components@"^2 || ^3 || ^4" from styled-components-modifiers@1.2.5
+npm ERR! node_modules/styled-components-modifiers
+npm ERR!   styled-components-modifiers@"^1.2.5" from the root project
+npm ERR! 
+npm ERR! Conflicting peer dependency: styled-components@4.4.1
+npm ERR! node_modules/styled-components
+npm ERR!   peer styled-components@"^2 || ^3 || ^4" from styled-components-modifiers@1.2.5
+npm ERR!   node_modules/styled-components-modifiers
+npm ERR!     styled-components-modifiers@"^1.2.5" from the root project
+npm ERR! 
+npm ERR! Fix the upstream dependency conflict, or retry
+npm ERR! this command with --force or --legacy-peer-deps
+npm ERR! to accept an incorrect (and potentially broken) dependency resolution.
+npm ERR! 
+npm ERR! 
+npm ERR! For a full report see:
+npm ERR! C:\Users\ManojsaiBellamkonda\AppData\Local\npm-cache\_logs\2023-05-29T09_28_34_700Z-eresolve-report.txt
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\ManojsaiBellamkonda\AppData\Local\npm-cache\_logs\2023-05-29T09_28_34_700Z-debug-0.log

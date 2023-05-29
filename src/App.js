@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { PrimaryButton, SecondaryButton, TritaryButton } from "./components";
+import { SignUpModal } from "./components";
+import { GlobalStyle, defaultTheme, darkTheme } from "./utils";
+import { ThemeProvider } from "styled-components";
 
 function App() {
+  const [useDarkTheme, setUseDarkTheme] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={useDarkTheme ? darkTheme : defaultTheme}>
+      <button
+        style={{ margin: "0 16px 24px", padding: "8px", background: "none" }}
+        onClick={() => setUseDarkTheme(!useDarkTheme)}
+      >
+        Alter Theme
+      </button>
+      <button
+        style={{ margin: "0 16px 24px", padding: "8px", background: "none" }}
+        onClick={() => setShowModal(!showModal)}
+      >
+        Toggle Modal
+      </button>
+      <SignUpModal showModal={showModal} setShowModal = {setShowModal} />
+      <GlobalStyle />
+    </ThemeProvider>
   );
 }
 
